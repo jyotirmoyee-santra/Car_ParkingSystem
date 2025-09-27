@@ -1,0 +1,275 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+@import url("https://unicons.iconscout.com/release/v4.0.0/css/line.css");
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width:100vw;
+  box-sizing: border-box;
+  font-family: "Poppins",sans-serif;
+  overflow : hidden;
+  position: fixed;
+}
+.H{
+  font-size: 72px;
+  font-weight: bold;
+  background: #833AB4;
+  background: linear-gradient(90deg, rgb(125, 41, 181) 0%, rgb(227, 40, 40) 73%, rgba(252, 176, 69, 1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text; /* fallback for other browsers */
+  color: transparent;
+}
+a{
+  color:rgb(207, 112, 206);
+}
+h2{
+  font-size: 40px;
+}
+h3{
+  color:#ecd4d4;
+  font-size: 20px; 
+}
+p{
+  color:#935bb9
+}
+.flex{
+  display:flex; 
+  justify-content: center;
+}
+
+/* Main container */
+.actual_container{
+  background-color: rgb(44, 9, 90);
+  width:100%;
+  height:100vh;
+}
+.backgroundcontainer{ /* main Container */
+    height:100vh;
+    width:100vw;
+    flex-direction: row;
+    align-items: center;
+}
+.imgkeepingCard{
+   height:100%;
+   width:60%;
+}
+.image{
+  height:100%;
+  width:100%;
+  background-image: url("/assets/image/CarParking.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.Card{
+  height:100%;
+  padding:40px;
+  width:40%;
+  background: linear-gradient(to bottom, #401266, #1e0556, #27078e);
+  position:relative; 
+}
+
+/** Login **/
+.login_btw{
+   position:absolute;
+   right:70px; 
+   color:#f6f6f6;
+   padding:7px 25px;
+   border: 2px solid #f6f6f6;
+   background: transparent;
+   border-radius: 6px;
+   cursor:pointer;
+}
+.login_btw.rotated{
+  transform: scaleY(1.2) translateX(10px) rotate(1turn);
+  transition: transform 2s ease;
+}
+.loginCard
+{
+  background: rgba(244, 242, 242, 0.1); 
+  border-radius: 20px;
+  padding: 10px;
+  margin-top:50px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.2); 
+  color: #f9f3f3; 
+  opacity: 0.9; 
+  height:93%;
+}
+
+.SignUpCard{
+  background: rgba(244, 242, 242, 0.1); 
+  border-radius: 20px;
+  padding: 10px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.2); 
+  color: #f9f3f3; 
+  opacity: 0.9; 
+}
+
+
+
+.btnhover:hover{
+  color:hotpink;
+  cursor: pointer
+}
+/* .text_link{
+  transition: color 0.3s ease;
+} */
+
+.inputbox label h3.textlink:hover {
+  color:#dd84f1;
+  z-index: 99;
+  cursor: pointer;
+}
+
+.login_Box,
+.signupBox{
+  width:100%;
+  height:98%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+}
+.welcomeMsg{
+  width:100%;
+  flex-direction: column;
+  column-gap: 8px;
+  align-items: center;
+
+}
+.welcomeMsg h2{
+  color:rgb(240, 242, 243);
+  font-size:30px;
+  margin-top: 20px;
+  width:100%;
+  text-align: center;
+
+}
+
+/* .LoginMainContainer,
+.SignUpMainContainer{
+  padding:8px;
+  /* background-color: rgb(120, 120, 190);  */
+
+.aboutParking{
+  padding-top: 90px;
+  padding-left:20px; 
+  z-index: 99;
+}
+.LoginMainContainer,
+.SignUpMainContainer{
+  width:90%;
+  height:100%;
+  display:flex;
+  color:#f9f3f3;
+
+}
+/* none for not showing 
+.SignUpCard{
+  display:none;
+} */
+
+.LoginForm,
+.signupForm{
+   height:100%;
+   width:100%;
+ }
+.inputbox {
+  width:100%;
+}
+.inputbox1{
+  width:100%;
+  flex-direction: column;
+  row-gap:5px;
+}
+.inputbox label input::placeholder{
+  color:#bbb9c4;
+}
+.inputbox label div.passwordhead,
+.inputbox label div.Emailhead{
+  justify-content: space-between;
+  /* width: 380px; */
+  color:#f6f6f6;
+  font-size: 20px ;
+  margin-bottom: 5px;
+  width:100%;
+}
+.inputbox label input{
+  height:50px;
+  width:100%;
+  border:none;
+  outline:none;
+  border-radius:25px;
+  padding:20px;
+  margin-bottom:30px;
+  /* blur */
+  background: rgba(245, 242, 242, 0.1);
+  opacity:0.9;
+  border: 1px solid rgba(255, 255, 255, 0.2); 
+  color: #f6f6f6;
+}
+
+
+.loginForm{
+  flex-direction: column;
+  align-items:flex-start;
+  padding:30px;
+  height:400px ;
+  width:450px;
+  z-index:999;
+}
+form{
+  height:100%;
+   width:100%;
+  padding:10px;
+}
+.FormHead{
+   padding:10px;
+  flex-direction: column;
+}
+.Emailhead{
+  width:100%;
+  height:100%;
+}
+.optionfield{
+  z-index: 9999;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.rememberme{
+ column-gap: 10px;
+}
+
+.signup{
+  column-gap:20px;
+  
+  margin-top: 15px;
+}
+.signup p,
+.signup a{
+  text-align: center;
+  color:#f9f3f3;
+}
+.loginbutton button{
+
+  margin-top: 15px;
+  height:50px;
+  width: 100%;
+  border-radius: 5px;
+  outline:none;
+  border:none;
+  background-color: rgb(66, 123, 255);
+  color:#f6f6f6;
+  font-size: 16px;
+}
+
+
+
+

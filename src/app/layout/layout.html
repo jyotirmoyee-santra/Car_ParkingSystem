@@ -1,0 +1,25 @@
+
+<div class="navBar">
+    <nav class="flex">
+        <div class="navContainer flex">
+                <div class="ContentLeft flex">
+                    <div><p style="font-size: 30px;font-weight: bold;"> Parking Smart</p></div>
+                     <div>Dashboard</div>
+                     <div>History</div>
+                     <div>Reports</div>
+                    
+                </div> 
+                <div class="ContentRight flex">
+                     <button class="Operatorbtn">Entry Operator</button>
+                     <div>{{userserv.loggedUserData.emailId}}</div>
+                    
+                     <div class="LogOutbtw" (click)="logOut()"> LogOut</div>
+                </div> 
+        </div>          
+    </nav>
+</div>
+<div class="dashboard">
+    <router-outlet></router-outlet> <!-- dashboard is calling-->
+</div>
+
+

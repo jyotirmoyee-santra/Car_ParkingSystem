@@ -1,0 +1,157 @@
+<div class="actual_container">
+  <div class="backgroundcontainer flex">
+    <!--start-->
+    <div class="imgkeepingCard">
+      <div class="image">
+        <!--image-->
+        <div class="aboutParking">
+          <h1 class="H">Parking</h1>
+          <h2 class="H">System...</h2>
+          <br /><br />
+          <h3>Discover seamless parking solutions with</h3>
+          <br />
+          <p>
+            Say goodbye to parking stress and embrace effortless convenience.
+            <br />
+            Unlock hassle-free parking experiences with our convenient online
+            <br />platform.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="Card">
+     @if(login){
+      <div>
+        <button class="login_btw" onclick="this.classList.add('rotated')">
+          Login
+        </button>
+      </div>
+      <!--Login form-->
+        <div class="loginCard">
+          <div class="login_Box flex">
+            <!--1st box-->
+            <div class="welcomeMsg flex">
+              <h2>Welcome Back</h2>
+              <p class="textlink" style="color: beige; font-size: 20px">
+                 to the Login Page
+              </p>
+            </div>
+            <!--2nd box-->
+            <div class="LoginMainContainer">
+              <div class="LoginForm">
+                <form class="FormHead flex">
+
+                  <div class="inputbox">
+                    <label class="inputbox1 flex">
+                      <div class="Emailhead flex">
+                        <h3 class="textlink">Email</h3>
+                        <i class="uil uil-envelope-alt"></i>
+                      </div>
+                         <input type="email" name="emailId" [(ngModel)]="loginuser.emailId" placeholder="Enter Email address" />
+                    </label>
+                  </div>
+                  
+  
+                  <div class="inputbox">
+                    <label class="inputbox1 flex">
+                      <div class="passwordhead flex">
+                        <h3 class="textlink">Password</h3>
+                        <i class="uil" [ngClass]="showpassword?'uil-eye':'uil-eye-slash'" (click)="toggleEye()"></i>
+                      </div>
+                      <input [type]="showpassword ?'text': 'password' " name="password" [(ngModel)]="loginuser.password" placeholder="Enter Password" />
+                    </label>
+                  </div>
+  
+                  <div class="optionfield flex">
+                    <span class="rememberme flex">
+                      <input type="checkbox" class="check1" />
+                      <label class="check" for="check">Remember me</label>
+                    </span>
+                    <span>
+                      <a href="#" class="btnhover">Forgot password?</a>
+                    </span>
+                  </div>
+                  <div class="loginbutton">
+                    <button (click)="OnLogin_btw()">Login Now</button>
+                  </div>
+                  <div class="signup flex">
+                    <p>Don't have any account</p>
+                    <a (click)="Signup($event)"  href="#" class="btnhover sign_upbtw">click here</a>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+     </div>}
+      @else{
+     <!--sign up-->
+      <div class="SignUpCard">
+          <div class="signupBox flex">
+            <!--1st box-->
+            <div class="welcomeMsg flex">
+              <h2>Welcome Back</h2>
+              <p class="textlink" style="color: beige; font-size: 20px">
+                to the signUp Page
+              </p>
+            </div>
+            <!--2nd box-->
+            <div class="SignUpMainContainer">
+              <div class="signupForm flex">
+                <form action="">
+                
+                  <div class="inputbox">
+                    <label for="">
+                      <div class="passwordhead flex">
+                        <h3 class="textlink">Full Name</h3>
+                        <i class=""></i>
+                      </div>
+                      <input type="text" name="fullName" [(ngModel)]="registerData.fullName" placeholder="Full Name" />
+                    </label>
+                  </div>
+                  <div class="inputbox">
+                    <label class="inputbox1 flex">
+                      <div class="Emailhead flex">
+                        <h3 class="textlink">Client ID</h3>
+                        <i class=""></i>
+                      </div>
+                         <input type="text" name="userId" [(ngModel)]="registerData.userId" placeholder="Enter Client ID"/>
+                    </label>
+                  </div>
+                  <div class="inputbox">
+                    <label for="">
+                      <div class="Emailhead flex">
+                        <h3 class="textlink">Email</h3>
+                        <i class="uil uil-envelope-alt"></i>
+                      </div>
+                      <input type="email" name="emailId" [(ngModel)]="registerData.emailId" placeholder="Enter Email address" />
+                    </label>
+                  </div>
+
+                  <div class="inputbox">
+                    <label for="">
+                      <div class="passwordhead flex">
+                        <h3 class="textlink">Password</h3>
+                        <i class="uil uil-eye-slash pw_hide"></i>
+                      </div>
+                      <input type="text" name="password" [(ngModel)]="registerData.password" placeholder="Confirm Password" />
+                    </label>
+                  </div>
+
+                  <div class="loginbutton">
+                    <button type="button" (click)="SignUpNewUser_btn()">Sign Up</button>
+                  </div>
+                  <div class="signup flex">
+                    <p>Any account you have then </p>
+                    <a (click)="showLogin($event)" href="#" class="btnhover sign_upbtw">click here</a>
+                  </div>
+                </form>
+              </div>
+            </div>
+        </div>   
+      </div>
+}
+    </div>
+    <!--end-->
+  </div>
+</div>
